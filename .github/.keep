@@ -1,8 +1,29 @@
 #include <stdio.h> 
 
 int main(){
+    char nome;
     int população; 
     float área;
     float PIB;
-    int pontosturísticos; 
+    int pontosturísticos;
+    
+printf("Bahia \n");
+scanf("%s",&nome);
+\
+printf("12567000 \n");
+scanf("%d", &população);
+
+printf("1521,11km² \n");
+scanf("%f", &área);
+
+print("799.32 bilhões de reais  \n");
+scatf("%f" , &PIB);
+
+printf("80");
+scanf("%d", &pontosturísticos);
+
+printf("nome da cidade: %s - população: %d\n", nome, população);
+
+scanf("área: %f - PIB: %f - pontos turísticos: %d", área, PIB, pontosturísticos);
+
 }
