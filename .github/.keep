@@ -1,4 +1,4 @@
-#include <stdio.h> 
+#include <stdio.h>  
 
 int main(){
     // Carta 1 - Bahia 
@@ -28,7 +28,7 @@ printf("super trunfo: Estados \n\n");
    printf ("área: %2f km²\n", área1);
    printf ("população: %ld habitantes\n", população1);
    printf ("PIB1: %2f bilhões\n" , PIB1);
-   printf ("pontos turísticos: %s\n\n", pontosturistico1);
+   printf ("pontos turísticos: %s\n\n", pontosturísticos1);
 
    prinf("carta 2:\n");
    prinf ("estados: %s\n", estados2);
