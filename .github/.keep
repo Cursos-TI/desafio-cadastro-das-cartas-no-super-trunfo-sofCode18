@@ -8,7 +8,7 @@ int main(){
     float área1  = 564733.0;
     float população1 = 14985284;
     float PIB1 = 537.2;
-    char pontosturísticos1 = 5;
+    int pontosturísticos1 = 5;
 
     // Carta 2 - Minas Gerais 
     char estados2 = "Minas Gerais";
@@ -17,7 +17,7 @@ int main(){
     float área2   = 100000;
     float população = 1060000000000;
     float PIB2 = 20380;
-    char pontosturistico2 = 10;
+    int pontosturistico2 = 10;
     
 printf("super trunfo: Estados \n\n");
 
@@ -28,7 +28,7 @@ printf("super trunfo: Estados \n\n");
    printf ("área: %2f km²\n", área1);
    printf ("população: %ld habitantes\n", população1);
    printf ("PIB1: %2f bilhões\n" , PIB1);
-   printf ("pontos turísticos: %s\n\n", pontosturísticos1);
+   printf ("pontos turísticos: %d\n\n", pontosturísticos1);
 
    prinf("carta 2:\n");
    prinf ("estados: %s\n", estados2);
@@ -37,7 +37,7 @@ printf("super trunfo: Estados \n\n");
    printf ("área: %2f km²\n" , área2);
    printf ("população %ld habitantes\n, população2");
    printf ("PIB: %2f bilhões\n", PIB2);
-   printf ("pontos turísticos: %s\n", pontosturistico2);
+   printf ("pontos turísticos: %d\n", pontosturistico2);
 
    return 0;
 
