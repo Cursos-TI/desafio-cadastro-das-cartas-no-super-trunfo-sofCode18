@@ -31,10 +31,20 @@ int main() {
     carta2.pontos_turistico = 10;
 
     // Imprime os dados da primeira carta 
-    printf ("--- Carta 1: %s - %s ---\n" , carta1.estados, carta.cidade);
-    prinf ("populacao: %.0f \n", carta1.populacao);
-    prinf ("Area: %.2f km2")
+    printf("--- Carta 1: %s - %s ---\n" , carta1.estados, carta.cidade);
+    prinf("populacao: %.0f \n", carta1.populacao);
+    prinf("Area: %.2f km2/n", carta1.area);
+    printf()"PIB: %.2f bilhoes\n", carta1.pib);
+    printf("pontos turísticos: %d\n", carta1.pontos_turisticos);
 
+    printf("\n");
+
+    // Imprime os dados da segunda carta 
+    printf("--- Carta 2: %s - %s ---\n", carta2.estados, carta2.cidade);
+    printf("populacao: %s.0f\n" , carta2.populacao);
+    printf("Area: %2f km2\n" , carta2.area);
+    printf("PIB: %2f bilhoes\n", carta2.pib);
+    printf("pontos turisticos; %d\n", carta2.pontos_turisticos);
 
 
    return 0;
