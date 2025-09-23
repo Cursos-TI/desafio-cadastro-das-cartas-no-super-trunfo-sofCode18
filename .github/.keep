@@ -1,0 +1,69 @@
+#include <stdio.h>
+#include <string.h>
+
+//Molde da nossa carta 
+struct Carta{
+    char estado[50];
+    char cidade[50];
+    float populaçao;
+    float area;
+    float pib;
+    int pontos_turisticos;
+};
+
+    int main(){
+        //Declara as duas cartas usando o molde
+        struct Carta carta1;
+        struct Carta carta2;
+
+        //dados da primeira carta (Bahia)
+        strcpy(carta1.estado,"Bahia");
+        strcpy(carta1.cidade,"Salvador");
+        carta1.populaçao=14985284;
+        carta1.area=564733.0;
+        carta1.pib=537.2;
+        carta.pontos_turisticos=5;
+
+        //Dados da segunda carta (Minas Gerais)
+        strcpy(carta2.estados,"Minas Gerais");
+        strcpy(carta2.cidade,"Belo Horizonte");
+        carta2.populaçao=2086924;
+        carta2.area=331.4;
+        carta2.pib=283.5;
+        carta2.pontos_turisticos=10;
+
+        // --- calculo dos novos atributos ---
+        float densidade_populacional_carta1= carta1.populacao / carta1.area;
+        float pib_per_capital_carta1= carta1.pib / carta1.populacao;
+
+        float  densidade_populacional_carta2= carta2.populacao / carta2.area;
+        float pib_per_capital_carta2= carta2.pib / carta2.populacao;
+
+        //Imprime os dados da primeira carta
+        printf("--- Carta 1:%s-%s---\n", carta1.estado,carta1.cidade);
+        printf("populaçao:%.0f\n",carta1.populaçao);
+        printf("Area:%.2f km2\n",carta1.area);
+        printf("PIB:%2f bilhoes\n", carta1.pib);
+        printf("pontos turisticos:%d\n", carta1.pontos_turisticos);
+        //imprime os novos atributos
+        printf("Densidade Populacional:%.2f hab/km2\n", densidade_populacional_carta1);
+        printf("PIB per capital:%.2f\n", pib_per_capital_carta1);
+
+        printf("\n");
+
+        //Imprime os dados da segunda carta
+        printf("--- Carta 2:%s-%s ---\n", carta2.estado,carta2.cidade);
+        printf("populacao:%.0f\n", carta2.populacao);
+        printf("area:%.2f km2\n", carta2.area);
+        printf("PIB:%.2f bilhoes\n", carta2.pib);
+        printf("pontos turistcos:%d\n", carta2.pontos_turisticos);
+        //imprime os novos atributos
+        printf('Densidade Populacional:%.2f hab/km2\n', densidade_populacional_carta2);
+        printf("PIB per capital:%.2f\n",pib_per_capital_carta2);
+
+        return 0;
+            
+    
+    }
+        
+
